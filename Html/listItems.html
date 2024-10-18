@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Items</title>
+    <link rel="stylesheet" href="../css/styles-items.css">
+</head>
+<body>
+    <main>
+        <h1>Lost and Found Items</h1>
+
+        <div class="search-filter">
+            <input type="text" placeholder="Search items..." id="searchBar">
+            <select id="filterDropdown">
+                <option value="all">All Items</option>
+                <option value="lost">Lost Items</option>
+                <option value="found">Found Items</option>
+            </select>
+        </div>
+
+        <table class="item-list">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Location</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="itemList">
+                <tr class="lost-item">
+                    <td><strong>Blue Backpack</strong><br><span>Navy blue backpack with white stripes</span></td>
+                    <td>Central Park</td>
+                    <td>2024-03-15</td>
+                    <td><span class="lost">Lost</span></td>
+                </tr>
+                <tr class="found-item">
+                    <td><strong>iPhone 13</strong><br><span>Black iPhone 13 with a cracked screen protector</span></td>
+                    <td>Main Street Coffee Shop</td>
+                    <td>2024-03-14</td>
+                    <td><span class="found">Found</span></td>
+                </tr>
+                <tr class="lost-item">
+                    <td><strong>Gold Watch</strong><br><span>Vintage gold watch with leather strap</span></td>
+                    <td>City Library</td>
+                    <td>2024-03-13</td>
+                    <td><span class="lost">Lost</span></td>
+                </tr>
+                <tr class="found-item">
+                    <td><strong>Car Keys</strong><br><span>Toyota car keys with a red keychain</span></td>
+                    <td>Downtown Parking Lot</td>
+                    <td>2024-03-12</td>
+                    <td><span class="found" style="color: brown;">Claimed</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lost & Found. All rights reserved.</p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Form</title>
+    <link rel="stylesheet" href="../css/styles-form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Report an Item</h2>
+        <form id="itemForm">
+            <label for="itemType">Item Type</label>
+            <select id="itemType" name="itemType" onchange="toggleImageOption()">
+                <option value="Lost">Lost Item</option>
+                <option value="Found">Found Item</option>
+            </select>
+
+            <label for="itemName">Item Name</label>
+            <input type="text" id="itemName" name="itemName" placeholder="Item Name" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Description"></textarea>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location">
+
+            <label for="date">Date</label>
+            <input type="text" id="date" name="date" placeholder="dd-mm-yyyy">
+
+            <label for="contact">Contact Information</label>
+            <input type="text" id="contact" name="contact" placeholder="Contact Information">
+
+            <div id="imageInputDiv">
+                <label for="itemImage">Choose Image</label>
+                <input type="file" id="itemImage" name="itemImage">
+            </div>
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </div>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>

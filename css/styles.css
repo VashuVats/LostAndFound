@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@700&display=swap');
+
+header {
+  background-color: #333;
+  padding: 2px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px; 
+  padding-right: 20px; 
+}
+
+nav ul li {
+  margin-left: 20px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(96, 202, 235);
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #070707;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgb(240, 18, 18);
+}
+
+
+.rainbow-text {
+    font-size: 72px;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, rgb(240, 84, 0), violet, green,rgb(84, 246, 249),indigo, yellow,red);
+    background-size: 300%; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    animation: rainbow-animation 10s linear infinite;
+}
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  position: relative; 
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color:#555;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end; 
+}
+  
+.chest {
+    width: 500px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+  
+.logo {
+    position: absolute; 
+    top: -10px;
+    width: 200px; 
+    transition: transform 1s ease, filter 0.3s ease;
+}
+  
+.chest:hover {
+    transform: scale(1.05);
+    filter: brightness(1.35);
+}
+.logo:hover {
+    transform: rotateY(360deg);
+    filter: brightness(1.2);
+}
+
+.detective{
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    height: 220px;
+    width: 310px; 
+}
+
+.DetectiveChild{
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  height: 270px;
+  width: 250px;
+}
+
+.report-btn {
+  position: absolute;
+  bottom: 70px; 
+  left: 270px;
+  padding: 10px 20px;
+  background-color: #df07d0; 
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.report-btn:hover {
+  background-color: #0041f5; 
+  transform: scale(1.1);
+}
+
+.List-Items {
+  position: absolute;
+  bottom: 70px; 
+  right: 215px;
+  padding: 10px 20px;
+  background-color: #ef0abe; 
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.List-Items:hover {
+  background-color: #0041f5; 
+  transform: scale(1.1);
+}
+.image-container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start;
+  width: 100%; 
+  margin-top: -560px;
+}
+
+.left-column {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  margin-left: 100px;
+}
+
+.right-column {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  margin-right: 100px;
+}
+
+.image-container img {
+  width: 150px;
+  height: 150px; 
+  margin: 5px; 
+}
+
+.laptop {
+  animation: bounce 2s infinite,moveX 10s infinite; 
+}
+
+.copy {
+  animation: bounce 2s infinite; 
+}
+.mobilephone {
+  animation: bounce 2s infinite,moveX 10s infinite; 
+}
+
+.opennb {
+  animation: bounce 2s infinite; 
+}
+
+.headphones {
+  animation: bounce 2s infinite,move-X 10s infinite; 
+}
+
+.waterbottle {
+  animation: bounce 2s infinite; 
+}
+
+.hindi-text {
+  position: fixed;
+  bottom: 70px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  font-size: 27px; 
+  font-family:"Amita", serif;
+  color: #db4040; 
+}
+
+@keyframes moveX {
+  0%, 100% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(150px); 
+  }
+}
+
+@keyframes move-X {
+  0%, 100% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(-150px); 
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-10px); 
+  }
+  60% {
+    transform: translateY(-5px); 
+}
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0%;
+  }
+  25% {
+    background-position: 25%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  75% {
+    background-position: 75%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
