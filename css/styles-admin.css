@@ -1,0 +1,123 @@
+body {
+    background-image: url('../img/abesphoto.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    list-style: none;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+.main-content {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+.main-content h2 {
+    text-align: center;
+}
+.form-list {
+    width: 100%;
+    margin: 20px 0;
+}
+.form-list th, .form-list td {
+    padding: 10px;
+    text-align: left;
+}
+.form-list th {
+    background: #333;
+    color: #fff;
+}
+.form-list tr:nth-child(even) {
+    background: #f4f4f4;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #555;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+#detailsModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border: 2px solid #333;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 400px;
+}
+#detailsModal h3 {
+    margin: 0 0 10px 0;
+}
+#detailsModal p {
+    margin: 5px 0;
+}
+.close-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.close-btn:hover {
+    background: #555;
+}

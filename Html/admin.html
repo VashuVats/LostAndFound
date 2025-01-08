@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/styles-admin.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Admin Dashboard</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h2>Submitted Forms</h2>
+            <table class="form-list">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Item</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Rohan</td>
+                        <td>Wallet</td>
+                        <td>Gauri Cafe</td>
+                        <td>2025-01-01</td>
+                        <td>
+                            <button class="btn view-details-btn" data-id="1">View Details</button>
+                            <button class="btn">Approve</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Raju</td>
+                        <td>Watch</td>
+                        <td>Mandir</td>
+                        <td>2025-01-03</td>
+                        <td>
+                            <button class="btn view-details-btn" data-id="2">View Details</button>
+                            <button class="btn">Approve</button>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sita</td>
+                        <td>Water Bottle</td>
+                        <td>AB-106 Classroom</td>
+                        <td>2025-01-05</td>
+                        <td>
+                            <button class="btn view-details-btn" data-id="3">View Details</button>
+                            <button class="btn">Approve</button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="detailsModal">
+        <h3>Form Details</h3>
+        <p><strong>Item Name:</strong> <span id="modalItemName"></span></p>
+        <p><strong>Name:</strong> <span id="modalName"></span></p>
+        <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+        <p><strong>Location:</strong> <span id="modalLocation"></span></p>
+        <p><strong>Date:</strong> <span id="modalDate"></span></p>
+        <p><strong>Contact:</strong> <span id="modalContact"></span></p>
+        <p><strong>Image:</strong> <a href="#" id="modalImageLink" target="_blank">View Image</a></p>
+        <button class="close-btn">Close</button>
+    </div>
+
+    <script src="../javascript/admin.js"></script>
+</body>
+</html>
